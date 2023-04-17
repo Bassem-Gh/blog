@@ -1,4 +1,16 @@
-<h1><%= @article.title %></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="text-2xl font-bold underline"><%= @article.title %></h1>
 
 <p><%= @article.body %></p>
 
@@ -10,9 +22,9 @@
                   } %></li>
 </ul>
 
-<h2>Comments</h2>
+<h2 ">Comments</h2>
 <%= render @article.comments %>
 
-<h2>Add a comment:</h2>
+<h2 ">Add a comment:</h2>
 <%= render 'comments/form' %>
 

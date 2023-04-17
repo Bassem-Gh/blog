@@ -203,6 +203,10 @@ GEM
     sqlite3 (1.6.2)
       mini_portile2 (~> 2.8.0)
     sqlite3 (1.6.2-x64-mingw32)
+    tailwindcss-rails (2.0.27)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.27-x64-mingw32)
+      railties (>= 6.0.0)
     thor (1.2.1)
     thread_safe (0.3.6)
     thread_safe (0.3.6-java)
@@ -263,6 +267,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
+  tailwindcss-rails (~> 2.0)
   turbo-rails
   turbolinks (~> 5)
   tzinfo-data
