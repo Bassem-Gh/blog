@@ -135,6 +135,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.2-x86-mingw32)
       racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     public_suffix (5.0.1)
     puma (4.3.12)
@@ -215,9 +217,12 @@ GEM
     sqlite3 (1.6.2)
       mini_portile2 (~> 2.8.0)
     sqlite3 (1.6.2-x64-mingw32)
+    sqlite3 (1.6.2-x86_64-linux)
     tailwindcss-rails (2.0.27)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.27-x64-mingw32)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.27-x86_64-linux)
       railties (>= 6.0.0)
     thor (1.2.1)
     thread_safe (0.3.6)
@@ -266,6 +271,7 @@ PLATFORMS
   x64-mingw32
   x86-mingw32
   x86-mswin32
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
