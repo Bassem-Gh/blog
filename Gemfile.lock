@@ -58,6 +58,8 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
+    bcrypt (3.1.18)
+    bcrypt (3.1.18-java)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -76,6 +78,12 @@ GEM
     crass (1.0.6)
     date (3.3.3)
     date (3.3.3-java)
+    devise (4.9.2)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
     erubi (1.12.0)
     ffi (1.15.5)
     ffi (1.15.5-java)
@@ -127,6 +135,9 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.2-x86-mingw32)
       racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
+      racc (~> 1.4)
+    orm_adapter (0.5.0)
     public_suffix (5.0.1)
     puma (4.3.12)
       nio4r (~> 2.0)
@@ -171,6 +182,9 @@ GEM
       ffi (~> 1.0)
     redis (4.8.1)
     regexp_parser (2.7.0)
+    responders (3.1.0)
+      actionpack (>= 5.2)
+      railties (>= 5.2)
     rexml (3.2.5)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
@@ -203,6 +217,13 @@ GEM
     sqlite3 (1.6.2)
       mini_portile2 (~> 2.8.0)
     sqlite3 (1.6.2-x64-mingw32)
+    sqlite3 (1.6.2-x86_64-linux)
+    tailwindcss-rails (2.0.27)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.27-x64-mingw32)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.27-x86_64-linux)
+      railties (>= 6.0.0)
     thor (1.2.1)
     thread_safe (0.3.6)
     thread_safe (0.3.6-java)
@@ -219,6 +240,8 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2023.3)
       tzinfo (>= 1.0.0)
+    warden (1.2.9)
+      rack (>= 2.0.9)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -248,11 +271,13 @@ PLATFORMS
   x64-mingw32
   x86-mingw32
   x86-mswin32
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  devise (~> 4.9)
   jbuilder (~> 2.7)
   listen (~> 3.2)
   puma (~> 4.1)
@@ -263,6 +288,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
+  tailwindcss-rails (~> 2.0)
   turbo-rails
   turbolinks (~> 5)
   tzinfo-data
