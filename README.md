@@ -1,5 +1,5 @@
 # README
-
+the application is deployed in Render web server : https://learning-rails-blog.onrender.com
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
