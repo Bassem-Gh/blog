@@ -2,8 +2,8 @@
 
 # doc
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: "bassem", password: "root", except: [:index, :show]
-  before_action :set_article, except: [:index, :new, :create]
+  #http_basic_authenticate_with name: "bassem", password: "root", except: [:index, :show]
+  before_action :set_article, except: [:index, :new, :create, :show]
 
   def index
     @articles = Article.all
