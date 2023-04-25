@@ -1,24 +1,21 @@
 # README
 the application is deployed in Render web server : https://learning-rails-blog.onrender.com
-This README would normally document whatever steps are necessary to get the
-application up and running.
+in this app i covered the below sections :
 
-Things you may want to cover:
+* Finish the blog DEMO
 
-* Ruby version
+* Add tailwind
 
-* System dependencies
+* Add scheduled articles 'posts'
 
-* Configuration
+* used scopes to filter 'archived' 'published' 'scheduled' and sort the articles
 
-* Database creation
+* authentification with devise 
 
-* Database initialization
+* Use mini test to test some models methds
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
+
