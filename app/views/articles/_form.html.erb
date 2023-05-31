@@ -17,8 +17,11 @@
   <div>
     <%= form.label :status %><br>
     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+</div>
+  <div>
+    <%= form.label :published_at %>
+    <%= form.datetime_select :published_at ,include_blank: true %>
   </div>
-
   <div>
     <%= form.submit %>
   </div>
