@@ -49,11 +49,11 @@ jobs:
         uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
         with:
           bundler-cache: true
-      #Add or replace any other lints here
-      - name: install bundle files 
+      - name: Install dependencies
         run: bundle install
       - name: Lint Ruby files
         run: bundle exec rubocop --parallel
+
 
   dockerize:
     runs-on: ubuntu-latest
