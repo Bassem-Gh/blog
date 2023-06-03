@@ -49,14 +49,9 @@ jobs:
         uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
         with:
           bundler-cache: true
-      # Add or replace any other lints here
-      # - name: Security audit dependencies
-      #   run: bundle exec && bundle audit
-      # - name: Security audit application code
-      #   run: bin/brakeman -q -w2
-      - name: Run RuboCop
-        run: |
-          /full/path/to/bin/rubocop --parallel
+      #Add or replace any other lints here
+      - name: Lint Ruby files
+        run: bundle exec rubocop --parallel
 
   dockerize:
     runs-on: ubuntu-latest
