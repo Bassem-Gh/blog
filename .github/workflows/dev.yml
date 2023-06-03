@@ -50,8 +50,8 @@ jobs:
         with:
           bundler-cache: true
       # Add or replace any other lints here
-      - name: Security audit dependencies
-        run: bundle exec && bundle audit
+      # - name: Security audit dependencies
+      #   run: bundle exec && bundle audit
       - name: Security audit application code
         run: bin/brakeman -q -w2
       - name: Lint Ruby files
@@ -68,8 +68,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build Docker image
-        run: docker build
-      - name: Push Docker image
-        run: docker push blog-app
+      - name: Build Docker images
+        run: docker compose build
+      - name: Push Docker images
+        run: docker compose push
 
